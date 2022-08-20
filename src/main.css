@@ -1,0 +1,26 @@
+@import "styles/reset.css";
+
+@import "styles/page.css";
+@import "styles/card.css";
+
+:root {
+  --color-light-cyan: hsl(193, 38%, 86%);
+  --color-neon-green: hsl(150, 100%, 66%);
+  --color-grayish-blue: hsl(217, 19%, 38%);
+  --color-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-very-dark-blue: hsl(220, 22%, 16%);
+}
+
+body {
+  font-family:
+    'Manrope',
+		system-ui,
+		-apple-system,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}

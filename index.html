@@ -1,45 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" href="src/assets/images/favicon.png" />
+        <link rel="icon" href="src/images/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Primary Meta Tags -->
         <title>Advice Generator App</title>
+        <meta name="title" content="Advice Generator App">
+        <meta name="description" content="Advice Generator App is an application that generate tips">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://john-mirage.github.io/advice-generator-app/">
+        <meta property="og:title" content="Advice Generator App">
+        <meta property="og:description" content="Advice Generator App is an application that generate tips">
+        <meta property="og:image" content="https://john-mirage.github.io/advice-generator-app/preview.jpg">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://john-mirage.github.io/advice-generator-app/">
+        <meta property="twitter:title" content="Advice Generator App">
+        <meta property="twitter:description" content="Advice Generator App is an application that generate tips">
+        <meta property="twitter:image" content="https://john-mirage.github.io/advice-generator-app/preview.jpg">
     </head>
 
-    <body class="px-4 pt-[120px] pb-20 w-full min-h-screen bg-very-dark-blue sm:px-8 sm:pt-12 sm:flex">
-        
-        <main class="relative w-full px-6 pt-10 pb-16 bg-dark-grayish-blue rounded-xl shadow-md text-center sm:max-w-card sm:rounded-2xl sm:m-auto sm:px-12 sm:pt-12 sm:pb-16">
-            <h1 id="advice-id" class="w-full h-auto text-xs text-neon-green uppercase tracking-[0.18rem] font-extrabold mb-6 sm:text-sm sm:tracking-[0.21rem] sm:mb-8">Loading advice id...</h1>
-            <p class="w-full h-auto text-2xl leading-9 text-light-cyan font-extrabold mb-6 sm:leading-10 sm:mb-10 sm:text-[28px]">&#8220;<span id="advice-content">Loading advice...</span>&#8221;</p>
-            <svg class="w-full h-auto sm:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295 16">
-                <g fill="none" fill-rule="evenodd">
-                    <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/>
-                    <g transform="translate(138)" fill="#CEE3E9">
-                        <rect width="6" height="16" rx="3"/>
-                        <rect x="14" width="6" height="16" rx="3"/>
-                    </g>
-                </g>
-            </svg>
-            <svg class="hidden sm:block sm:w-full sm:h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 16">
-                <g fill="none" fill-rule="evenodd">
-                    <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/>
-                    <g transform="translate(212)" fill="#CEE3E9">
-                        <rect width="6" height="16" rx="3"/>
-                        <rect x="14" width="6" height="16" rx="3"/>
-                    </g>
-                </g>
-            </svg>
-            <button id="advice-random-button" aria-label="random advice generator button" class="flex absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-16 rounded-full bg-neon-green transition-shadow hover:shadow-button hover:shadow-neon-green">
-                <svg class="w-6 h-auto m-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/>
-                </svg>
-            </button>
-        </main>
+    <body class="page">
+        <!-- app -->
+        <div class="page__app" id="app"></div>
 
         <script type="module" src="/src/main.ts"></script>
     </body>
