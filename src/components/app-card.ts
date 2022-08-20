@@ -66,6 +66,7 @@ class AppCard extends HTMLElement {
       .catch(() => {
         this.titleElement.textContent = "error";
         this.adviceElement.textContent = "Oups, the API seems to be broken";
+        this.buttonElement.removeAttribute("disabled");
       });
   }
 }
