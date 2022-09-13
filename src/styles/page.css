@@ -3,20 +3,11 @@
   background-color: var(--color-very-dark-blue);
 }
 
-.page__app {
-  width: 100%;
-  height: auto;
-}
-
 @media screen and (min-width: 572px) {
   .page {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem 2rem 5rem 2rem;
-  }
-
-  .page__app {
-    max-width: 33.75rem;
   }
 }

@@ -30,9 +30,27 @@
     </head>
 
     <body class="page">
-        <!-- app -->
-        <div class="page__app" id="app"></div>
+        <!-- card -->
+        <main class="card" is="web-card">
+          <div class="card__content">
+            <div id="advice">
+              <h1 class="card__title" id="advice-id"></h1>
+              <p class="card__description" id="advice-value"></p>
+            </div>
+            <picture class="card__separator">
+              <source srcset="src/images/pattern-divider-desktop.svg" media="(min-width: 572px)"/>
+              <img class="card__separator-image" src="src/images/pattern-divider-mobile.svg" alt="divider illustration" draggable="false">
+            </picture>
+          </div>
+          <button class="card__button" id="generate-button" aria-label="random advice generator button" disabled>
+            <svg class="card__button-icon" id="dice-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"/>
+            </svg>
+            <span class="card__button-spinner"></span>
+          </button>
+        </main>
 
+        <!-- module -->
         <script type="module" src="/src/main.ts"></script>
     </body>
     

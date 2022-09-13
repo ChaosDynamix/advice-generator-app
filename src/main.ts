@@ -1,12 +1,9 @@
+import { CSSPlugin, gsap } from "gsap";
+
 import "./main.css";
 
-import AppCard from "./components/app-card";
+import WebCard from "./components/web-card";
 
-customElements.define("app-card", AppCard, { extends: "main" });
+gsap.registerPlugin(CSSPlugin);
 
-const app = document.getElementById("app");
-const appCard = document.createElement("main", { is: "app-card" });
-
-window.addEventListener("load", () => {
-    app?.append(appCard);
-});
+customElements.define("web-card", WebCard, { extends: "main" });
