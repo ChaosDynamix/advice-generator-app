@@ -46,7 +46,7 @@ class WebCard extends HTMLElement {
   }
 
   async fetchTip(): Promise<TipResponse> {
-    return await fetch(API_URL)
+    return await fetch(API_URL, { cache: "no-store" })
       .then((response) => response.json())
       .then((tip) => {
         const { id, advice } = tip.slip;
